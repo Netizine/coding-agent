@@ -1,0 +1,36 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "tools/xtask"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+agent-core = { path = "crates/agent-core" }
+agent-runtime = { path = "crates/agent-runtime" }
+agent-test-support = { path = "crates/agent-test-support" }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["arbitrary_precision"] }
+thiserror = "2"
+chrono = { version = "0.4", default-features = false, features = ["std", "serde"] }
+base64 = "0.22"
+mime = "0.3"
+url = "2"
+schemars = "1"
+jsonschema = { version = "0.60", default-features = false }
+futures-core = "0.3"
+futures-util = "0.3"
+tokio = { version = "1", features = ["macros", "rt", "sync", "time", "test-util"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+sha2 = "0.10"
+regex = "1"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+dbg_macro = "deny"

@@ -1,0 +1,27 @@
+# Foundation compatibility
+
+The public API uses Rust value ownership and object-safe boxed futures/streams. Go API names and runtime object identities are not preserved. No Go process is needed by the Rust libraries.
+
+Implemented content JSON uses the Go snapshot's `Type` discriminator and field spellings to allow shared fixtures. This is not a blanket promise of byte-identical Go serialization: omitted/default/null fields may differ; map order and whitespace are not preserved. Unknown objects and unknown fields on known content are preserved as JSON values, including large integers. Runtime-only raw SDK objects are stored as shared `Arc<dyn Any + Send + Sync>` values, excluded from serialization and redacted in Debug. Equality compares raw object identity, not opaque object contents.
+
+Typed content covers all 21 baseline discriminators, including MCP, code interpreter, image generation, web search, and standing approval responses. Optional provider fields may remain in the extension map. Approval wrappers validate nested call types; they do not perform authorization or approval binding, which is P2.
+
+Known malformed content is rejected rather than silently treated as an unknown variant. Field<T> explicitly distinguishes absent/null/value where necessary. The content codec is stricter than Go about missing required payload fields; this is an intentional validation difference.
+
+Response folding follows the last compatible message (not a global ID index), role/author boundaries, property scope, first timestamp after the Unix epoch, later nonempty metadata and continuation clearing. Usage is summed without inventing missing totals. Rust counter overflow saturates; this differs from Go integer overflow.
+
+Coalescing follows the baseline pass order: adjacent text and reasoning, latest image results by call ID, accumulated web queries by call ID, adjacent compatible text data, and recursive adjacent code inputs/results. Annotations prevent adjacent merges; protected reasoning terminates a reasoning merge. First-value metadata and unknown extensions are retained except where the baseline drops data-content headers. Thirteen shared cases pass both implementations. `Response::to_updates` preserves message/response property scopes, continuation and per-message timestamps, including Go's zero-time fallback. Rust empty maps do not distinguish Go nil maps from allocated empty maps: an empty response property map alone does not emit a metadata update. Null content vectors are rejected rather than interpreted as empty Go slices.
+
+Clone performs deep copies of owned JSON/content rather than Go's shallow container cloning. Built-in filters preserve input positions and order; arbitrary fallible filter middleware and nil-message semantics are not implemented.
+
+JSON Schema uses schemars generation and jsonschema validation. HTTP/file reference resolution is disabled through dependency features. Schemas must be self-contained or use local references. `openai_strict` transforms a clone using the baseline's closed-object, required-field, default-description and unsupported-keyword rules. It adds a 128-level recursion limit and does not cache results. This is a baseline schema transform; live service dialect acceptance remains a P3 adapter test.
+
+Run option patches apply left to right; missing retains, null clears optional values, and false/zero/empty remain explicit. Tool modes are auto/none/required/named. Duplicate or unknown tool names fail validation. Typed IDs reject blank/control-containing strings; existing message wire IDs remain strings because blank IDs have defined folding semantics. Capability flags reject unsupported media, reasoning, hosted tools, parallel calls and provider extensions before invocation. These are draft provider contracts, not implemented cloud features.
+
+The runtime supports pull-based streams with per-invocation child cancellation and deadlines. Consumer drop releases the stream and signals cancellation. `RunTasks` provides owned background work with cooperative shutdown, a shared deadline, and abort-and-join on timeout. Dropping its shutdown future cancels/aborts owned handles; asynchronous destruction is scheduled by Tokio and must be driven by the runtime. Providers must use an ownership mechanism and explicitly await shutdown when completion matters. The middleware completion callback in this spike wraps stream creation, not stream exhaustion. Full lifecycle middleware is P2.
+
+Collection returns an error without a partial Response, matching Go's Collect policy. Consumers requiring partial output should read updates directly. There is no retry policy, network provider, agent loop, session store or checkpoint manager yet.
+
+StateEnvelope and CodecRegistry use explicit schema ID/version registration. Custom values plus queued messages/pending requests restore in fresh processes; duplicate registrations, wrong types/versions and corrupt payloads fail. The queued-state fixture is a persistence spike, not a running workflow checkpoint. Graph identity, migrations, replay semantics and the checkpoint manager remain P5. No automatic Go checkpoint importer is promised.
+
+Telemetry: no global subscriber/exporter and no Microsoft feature-usage mask. The Rust library emits no usage telemetry in this foundation. All selected compiler/dependency versions are recorded in toolchain/lock files. Platform validation evidence is recorded in status.md; release support beyond these foundation tests is not implied.

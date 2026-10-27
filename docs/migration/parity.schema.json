@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "baseline_sha256", "entries"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "baseline_sha256": {"type":"string","pattern":"^[a-f0-9]{64}$"},
+    "entries": {"type":"array","items":{"$ref":"#/$defs/entry"}}
+  },
+  "$defs": {
+    "strings": {"type":"array","items":{"type":"string","minLength":1},"uniqueItems":true},
+    "entry": {
+      "type":"object","additionalProperties":false,
+      "required":["id","go_sources","go_tests","rust_target","rust_sources","rust_tests","phase","status","compatibility","evidence","notes"],
+      "properties": {
+        "id":{"type":"string","pattern":"^[a-z0-9][a-z0-9._/-]+$"},
+        "go_sources":{"$ref":"#/$defs/strings"},
+        "go_tests":{"$ref":"#/$defs/strings"},
+        "rust_target":{"type":"string"},
+        "rust_sources":{"$ref":"#/$defs/strings"},
+        "rust_tests":{"$ref":"#/$defs/strings"},
+        "phase":{"enum":["P0","P1","P2","P3","P4","P5","P6","P7","P8","P9","P10"]},
+        "status":{"enum":["not_started","in_progress","implemented","verified","deferred","intentional_difference"]},
+        "compatibility":{"enum":["behavioral","adapted","inventory","intentional_difference"]},
+        "evidence":{"$ref":"#/$defs/strings"},
+        "notes":{"type":"string","minLength":1}
+      }
+    }
+  }
+}

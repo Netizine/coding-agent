@@ -1,0 +1,66 @@
+[
+  {
+    "name": "same_message_chunks",
+    "updates": [
+      {"MessageID":"m1","Contents":[{"Type":"text","Text":"Hello "}]},
+      {"MessageID":"m1","Contents":[{"Type":"text","Text":"world"}],"FinishReason":"stop"}
+    ],
+    "expected": {"text":"Hello world","message_ids":["m1"],"finish_reason":"stop","continuation_token":"","conversation_id":null,"input_tokens":0,"output_tokens":0,"created_at":null}
+  },
+  {
+    "name": "nonconsecutive_id_does_not_reorder",
+    "updates": [
+      {"MessageID":"a","Contents":[{"Type":"text","Text":"one"}]},
+      {"MessageID":"b","Contents":[{"Type":"text","Text":"two"}]},
+      {"MessageID":"a","Contents":[{"Type":"text","Text":"three"}]}
+    ],
+    "expected": {"text":"one\ntwo\nthree","message_ids":["a","b","a"],"finish_reason":"","continuation_token":"","conversation_id":null,"input_tokens":0,"output_tokens":0,"created_at":null}
+  },
+  {
+    "name": "role_and_author_boundaries",
+    "updates": [
+      {"MessageID":"m","AuthorName":"a","Role":"assistant","Contents":[{"Type":"text","Text":"a"}]},
+      {"MessageID":"m","AuthorName":"b","Role":"assistant","Contents":[{"Type":"text","Text":"b"}]},
+      {"MessageID":"m","AuthorName":"b","Role":"tool","Contents":[{"Type":"text","Text":"tool"}]}
+    ],
+    "expected": {"text":"a\nb\ntool","message_ids":["m","m","m"],"finish_reason":"","continuation_token":"","conversation_id":null,"input_tokens":0,"output_tokens":0,"created_at":null}
+  },
+  {
+    "name": "omitted_conversation_retained_continuation_cleared",
+    "updates": [
+      {"ConversationID":"server","ContinuationToken":"pending","FinishReason":"stop","Contents":[{"Type":"text","Text":"ok"}]},
+      {"Contents":[]}
+    ],
+    "expected": {"text":"ok","message_ids":[""],"finish_reason":"stop","continuation_token":"","conversation_id":"server","input_tokens":0,"output_tokens":0,"created_at":null}
+  },
+  {
+    "name": "explicit_empty_conversation_and_pending_token",
+    "updates": [
+      {"ConversationID":"old"},
+      {"ConversationID":"","ContinuationToken":"new"}
+    ],
+    "expected": {"text":"","message_ids":[""],"finish_reason":"","continuation_token":"new","conversation_id":"","input_tokens":0,"output_tokens":0,"created_at":null}
+  },
+  {
+    "name": "first_valid_timestamp_wins",
+    "updates": [
+      {"CreatedAt":"1970-01-01T00:00:00Z"},
+      {"CreatedAt":"2026-10-27T10:00:00Z"},
+      {"CreatedAt":"2025-01-01T00:00:00Z"}
+    ],
+    "expected": {"text":"","message_ids":[""],"finish_reason":"","continuation_token":"","conversation_id":null,"input_tokens":0,"output_tokens":0,"created_at":"2026-10-27T10:00:00+00:00"}
+  },
+  {
+    "name": "usage_is_summed_without_inventing_totals",
+    "updates": [
+      {"MessageID":"a","Contents":[{"Type":"usage","Details":{"InputTokenCount":12,"OutputTokenCount":3}}]},
+      {"MessageID":"b","Contents":[{"Type":"usage","Details":{"InputTokenCount":2,"OutputTokenCount":4}}]}
+    ],
+    "expected": {"text":"","message_ids":["a","b"],"finish_reason":"","continuation_token":"","conversation_id":null,"input_tokens":14,"output_tokens":7,"created_at":null}
+  },
+  {
+    "name": "empty_stream",
+    "updates": [],
+    "expected": {"text":"","message_ids":[],"finish_reason":"","continuation_token":"","conversation_id":null,"input_tokens":0,"output_tokens":0,"created_at":null}
+  }
+]

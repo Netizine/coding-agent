@@ -1,0 +1,20 @@
+[package]
+name = "agent-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Async provider contracts and lifecycle foundation"
+
+[dependencies]
+agent-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+futures-core.workspace = true
+futures-util.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+
+[lints]
+workspace = true

@@ -1,0 +1,3873 @@
+{
+  "schema_version": 1,
+  "baseline_sha256": "e89a0c375daec01bbf0bdd3d919e5138b9ebd7ad51c4ac9aad48ca12153f0b11",
+  "entries": [
+    {
+      "id": "inventory.-catalog.cmd.dotnetsymbols",
+      "go_sources": [
+        "_catalog/cmd/dotnetsymbols/attributes.go",
+        "_catalog/cmd/dotnetsymbols/extract.go",
+        "_catalog/cmd/dotnetsymbols/main.go",
+        "_catalog/cmd/dotnetsymbols/main_test.go",
+        "_catalog/cmd/dotnetsymbols/release.go",
+        "_catalog/cmd/dotnetsymbols/signatures.go",
+        "_catalog/cmd/dotnetsymbols/tests.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.-catalog.cmd.internal.symbolcatalog",
+      "go_sources": [
+        "_catalog/cmd/internal/symbolcatalog/catalog.go",
+        "_catalog/cmd/internal/symbolcatalog/catalog_test.go",
+        "_catalog/cmd/internal/symbolcatalog/declarations.go",
+        "_catalog/cmd/internal/symbolcatalog/merge.go",
+        "_catalog/cmd/internal/symbolcatalog/model.go",
+        "_catalog/cmd/internal/symbolcatalog/names.go",
+        "_catalog/cmd/internal/symbolcatalog/tests.go",
+        "_catalog/cmd/internal/symbolcatalog/update.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.-catalog.cmd.internal.testinventory",
+      "go_sources": [
+        "_catalog/cmd/internal/testinventory/inventory.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.-catalog.cmd.symbolmap",
+      "go_sources": [
+        "_catalog/cmd/symbolmap/gochanges.go",
+        "_catalog/cmd/symbolmap/goexample.go",
+        "_catalog/cmd/symbolmap/goindex.go",
+        "_catalog/cmd/symbolmap/goonly.go",
+        "_catalog/cmd/symbolmap/gotests.go",
+        "_catalog/cmd/symbolmap/main.go",
+        "_catalog/cmd/symbolmap/main_test.go",
+        "_catalog/cmd/symbolmap/reconcile.go",
+        "_catalog/cmd/symbolmap/report.go",
+        "_catalog/cmd/symbolmap/testmapping.go",
+        "_catalog/cmd/symbolmap/testreport.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent",
+      "go_sources": [
+        "agent/agent.go",
+        "agent/agent_benchmark_test.go",
+        "agent/agent_test.go",
+        "agent/context.go",
+        "agent/context_test.go",
+        "agent/continuation.go",
+        "agent/doc.go",
+        "agent/format.go",
+        "agent/history.go",
+        "agent/history_test.go",
+        "agent/logger.go",
+        "agent/logger_test.go",
+        "agent/messageinjection.go",
+        "agent/middleware.go",
+        "agent/middleware_test.go",
+        "agent/options.go",
+        "agent/options_test.go",
+        "agent/response.go",
+        "agent/response_test.go",
+        "agent/session.go",
+        "agent/session_test.go",
+        "agent/structuredoutput.go",
+        "agent/structuredoutput_test.go",
+        "agent/value.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P2",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.compaction",
+      "go_sources": [
+        "agent/compaction/compaction_test.go",
+        "agent/compaction/contextwindow.go",
+        "agent/compaction/contextwindow_test.go",
+        "agent/compaction/doc.go",
+        "agent/compaction/equality.go",
+        "agent/compaction/equality_test.go",
+        "agent/compaction/group.go",
+        "agent/compaction/historyprovider.go",
+        "agent/compaction/historyprovider_test.go",
+        "agent/compaction/index.go",
+        "agent/compaction/index_test.go",
+        "agent/compaction/pipeline.go",
+        "agent/compaction/pipeline_test.go",
+        "agent/compaction/provider.go",
+        "agent/compaction/slidingwindow.go",
+        "agent/compaction/strategy.go",
+        "agent/compaction/summarization.go",
+        "agent/compaction/toolresult.go",
+        "agent/compaction/trigger.go",
+        "agent/compaction/trigger_test.go",
+        "agent/compaction/truncation.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.format.jsonformat",
+      "go_sources": [
+        "agent/format/jsonformat/doc.go",
+        "agent/format/jsonformat/encoding.go",
+        "agent/format/jsonformat/encoding_test.go",
+        "agent/format/jsonformat/jsonformat.go",
+        "agent/format/jsonformat/jsonformat_test.go",
+        "agent/format/jsonformat/structuredoutput.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P2",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness",
+      "go_sources": [
+        "agent/harness/harness.go",
+        "agent/harness/harness_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.agentmode",
+      "go_sources": [
+        "agent/harness/agentmode/agentmode.go",
+        "agent/harness/agentmode/agentmode_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.filememory",
+      "go_sources": [
+        "agent/harness/filememory/content.go",
+        "agent/harness/filememory/content_test.go",
+        "agent/harness/filememory/filememory.go",
+        "agent/harness/filememory/filememory_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.loop",
+      "go_sources": [
+        "agent/harness/loop/evaluators.go",
+        "agent/harness/loop/loop.go",
+        "agent/harness/loop/loop_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.todo",
+      "go_sources": [
+        "agent/harness/todo/todo.go",
+        "agent/harness/todo/todo_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.toolapproval",
+      "go_sources": [
+        "agent/harness/toolapproval/toolapproval.go",
+        "agent/harness/toolapproval/toolapproval_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P2",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.harness.toolautocall",
+      "go_sources": [
+        "agent/harness/toolautocall/autocall.go",
+        "agent/harness/toolautocall/autocall_approval_test.go",
+        "agent/harness/toolautocall/autocall_log_test.go",
+        "agent/harness/toolautocall/autocall_test.go",
+        "agent/harness/toolautocall/doc.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P2",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.memory",
+      "go_sources": [
+        "agent/memory/provider.go",
+        "agent/memory/provider_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.skills",
+      "go_sources": [
+        "agent/skills/doc.go",
+        "agent/skills/frontmatter_source_test.go",
+        "agent/skills/provider.go",
+        "agent/skills/provider_internal_test.go",
+        "agent/skills/provider_test.go",
+        "agent/skills/skills.go",
+        "agent/skills/skills_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.skills.fsskills",
+      "go_sources": [
+        "agent/skills/fsskills/doc.go",
+        "agent/skills/fsskills/path_scope.go",
+        "agent/skills/fsskills/source.go",
+        "agent/skills/fsskills/source_block_builder_test.go",
+        "agent/skills/fsskills/source_script_test.go",
+        "agent/skills/fsskills/source_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.agent.textsearch",
+      "go_sources": [
+        "agent/textsearch/provider.go",
+        "agent/textsearch/provider_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.cmd.verifyexamples",
+      "go_sources": [
+        "cmd/verifyexamples/example_sets.go",
+        "cmd/verifyexamples/example_sets_test.go",
+        "cmd/verifyexamples/examples.go",
+        "cmd/verifyexamples/main.go",
+        "cmd/verifyexamples/options.go",
+        "cmd/verifyexamples/options_test.go",
+        "cmd/verifyexamples/orchestrator.go",
+        "cmd/verifyexamples/reporter.go",
+        "cmd/verifyexamples/runner.go",
+        "cmd/verifyexamples/types.go",
+        "cmd/verifyexamples/verifier.go",
+        "cmd/verifyexamples/verifier_test.go",
+        "cmd/verifyexamples/writers.go",
+        "cmd/verifyexamples/writers_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.embedding",
+      "go_sources": [
+        "embedding/bind.go",
+        "embedding/bind_test.go",
+        "embedding/embedding.go",
+        "embedding/embedding_test.go",
+        "embedding/generator.go",
+        "embedding/generator_test.go",
+        "embedding/options.go",
+        "embedding/options_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.agentopts",
+      "go_sources": [
+        "internal/agentopts/options.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.agenttest",
+      "go_sources": [
+        "internal/agenttest/agenttest.go",
+        "internal/agenttest/continuation.go",
+        "internal/agenttest/message.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.azaiprojects",
+      "go_sources": [
+        "internal/azaiprojects/client.go",
+        "internal/azaiprojects/gen.go",
+        "internal/azaiprojects/toolbox_name.go",
+        "internal/azaiprojects/toolbox_name_test.go",
+        "internal/azaiprojects/z_client.go",
+        "internal/azaiprojects/z_connections_client.go",
+        "internal/azaiprojects/z_constants.go",
+        "internal/azaiprojects/z_datasets_client.go",
+        "internal/azaiprojects/z_deployments_client.go",
+        "internal/azaiprojects/z_evaluationrules_client.go",
+        "internal/azaiprojects/z_evaluationtaxonomies_client.go",
+        "internal/azaiprojects/z_evaluatorgenerationjobs_client.go",
+        "internal/azaiprojects/z_evaluators_client.go",
+        "internal/azaiprojects/z_indexes_client.go",
+        "internal/azaiprojects/z_insights_client.go",
+        "internal/azaiprojects/z_interfaces.go",
+        "internal/azaiprojects/z_memorystores_client.go",
+        "internal/azaiprojects/z_models.go",
+        "internal/azaiprojects/z_models_serde.go",
+        "internal/azaiprojects/z_options.go",
+        "internal/azaiprojects/z_polymorphic_helpers.go",
+        "internal/azaiprojects/z_redteams_client.go",
+        "internal/azaiprojects/z_responses.go",
+        "internal/azaiprojects/z_responses_serde.go",
+        "internal/azaiprojects/z_schedules_client.go",
+        "internal/azaiprojects/z_toolboxes_client.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.concurrent",
+      "go_sources": [
+        "internal/concurrent/hashmap.go",
+        "internal/concurrent/hashmap_test.go",
+        "internal/concurrent/map.go",
+        "internal/concurrent/map_test.go",
+        "internal/concurrent/queue.go",
+        "internal/concurrent/queue_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.contentexthandler",
+      "go_sources": [
+        "internal/contentexthandler/contentexthandler.go",
+        "internal/contentexthandler/contentexthandler_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.filestore",
+      "go_sources": [
+        "internal/filestore/store.go",
+        "internal/filestore/store_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.hashmap",
+      "go_sources": [
+        "internal/hashmap/hashmap.go",
+        "internal/hashmap/hashmap_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.jsonx",
+      "go_sources": [
+        "internal/jsonx/jsonx.go",
+        "internal/jsonx/jsonx_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.maphash",
+      "go_sources": [
+        "internal/maphash/maphash.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.messagetest",
+      "go_sources": [
+        "internal/messagetest/messagetest.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.modelcall",
+      "go_sources": [
+        "internal/modelcall/modelcall.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.otelx",
+      "go_sources": [
+        "internal/otelx/context.go",
+        "internal/otelx/error.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.slogx",
+      "go_sources": [
+        "internal/slogx/slogx.go",
+        "internal/slogx/slogx_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.storepaths",
+      "go_sources": [
+        "internal/storepaths/storepaths.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.telemetry",
+      "go_sources": [
+        "internal/telemetry/featureusage.go",
+        "internal/telemetry/featureusage_activation_test.go",
+        "internal/telemetry/featureusage_internal_test.go",
+        "internal/telemetry/telemetry.go",
+        "internal/telemetry/telemetry_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.internal.toolmiddleware",
+      "go_sources": [
+        "internal/toolmiddleware/wrapper.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.message",
+      "go_sources": [
+        "message/annotation.go",
+        "message/annotation_test.go",
+        "message/content.go",
+        "message/content_test.go",
+        "message/datacontent.go",
+        "message/datacontent_test.go",
+        "message/datauri.go",
+        "message/datauri_test.go",
+        "message/doc.go",
+        "message/message.go",
+        "message/message_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P1",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.message.messagefilter",
+      "go_sources": [
+        "message/messagefilter/doc.go",
+        "message/messagefilter/filter.go",
+        "message/messagefilter/filter_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P1",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.message.messageworkflow",
+      "go_sources": [
+        "message/messageworkflow/doc.go",
+        "message/messageworkflow/messageforwarding.go",
+        "message/messageworkflow/messageforwarding_test.go",
+        "message/messageworkflow/messageworkflow.go",
+        "message/messageworkflow/messageworkflow_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.a2aprovider",
+      "go_sources": [
+        "provider/a2aprovider/a2a.go",
+        "provider/a2aprovider/a2a_test.go",
+        "provider/a2aprovider/agentrunmode.go",
+        "provider/a2aprovider/agentrunmode_test.go",
+        "provider/a2aprovider/artifact_stream.go",
+        "provider/a2aprovider/artifact_stream_test.go",
+        "provider/a2aprovider/card.go",
+        "provider/a2aprovider/convert_test.go",
+        "provider/a2aprovider/doc.go",
+        "provider/a2aprovider/executor.go",
+        "provider/a2aprovider/factory_test.go",
+        "provider/a2aprovider/handler.go",
+        "provider/a2aprovider/hosting_convert.go",
+        "provider/a2aprovider/hosting_convert_test.go",
+        "provider/a2aprovider/hosting_test.go",
+        "provider/a2aprovider/session.go",
+        "provider/a2aprovider/sessionstore.go",
+        "provider/a2aprovider/task.go",
+        "provider/a2aprovider/taskstore.go",
+        "provider/a2aprovider/taskstore_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P9",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.aguiprovider",
+      "go_sources": [
+        "provider/aguiprovider/agui.go",
+        "provider/aguiprovider/agui_leak_test.go",
+        "provider/aguiprovider/agui_test.go",
+        "provider/aguiprovider/doc.go",
+        "provider/aguiprovider/hosting.go",
+        "provider/aguiprovider/hosting_convert.go",
+        "provider/aguiprovider/hosting_convert_test.go",
+        "provider/aguiprovider/hosting_events.go",
+        "provider/aguiprovider/hosting_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P9",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.anthropicprovider",
+      "go_sources": [
+        "provider/anthropicprovider/agent.go",
+        "provider/anthropicprovider/agent_test.go",
+        "provider/anthropicprovider/doc.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.azureprovider",
+      "go_sources": [
+        "provider/azureprovider/aisearch.go",
+        "provider/azureprovider/aisearch_e2e_test.go",
+        "provider/azureprovider/aisearch_go127_test.go",
+        "provider/azureprovider/aisearch_test.go",
+        "provider/azureprovider/client.go",
+        "provider/azureprovider/client_test.go",
+        "provider/azureprovider/collection.go",
+        "provider/azureprovider/collection_test.go",
+        "provider/azureprovider/cosmosdb.go",
+        "provider/azureprovider/cosmosdb_collection.go",
+        "provider/azureprovider/cosmosdb_e2e_test.go",
+        "provider/azureprovider/cosmosdb_query.go",
+        "provider/azureprovider/cosmosdb_test.go",
+        "provider/azureprovider/embedding_test.go",
+        "provider/azureprovider/filter.go",
+        "provider/azureprovider/filter_test.go",
+        "provider/azureprovider/record.go",
+        "provider/azureprovider/schema.go",
+        "provider/azureprovider/schema_test.go",
+        "provider/azureprovider/search.go",
+        "provider/azureprovider/search_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.copilotprovider",
+      "go_sources": [
+        "provider/copilotprovider/agent_e2e_test.go",
+        "provider/copilotprovider/copilot.go",
+        "provider/copilotprovider/copilot_internal_test.go",
+        "provider/copilotprovider/copilot_test.go",
+        "provider/copilotprovider/doc.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P9",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.foundryprovider",
+      "go_sources": [
+        "provider/foundryprovider/agent.go",
+        "provider/foundryprovider/agent_e2e_test.go",
+        "provider/foundryprovider/agent_test.go",
+        "provider/foundryprovider/client.go",
+        "provider/foundryprovider/client_test.go",
+        "provider/foundryprovider/clientheaders.go",
+        "provider/foundryprovider/clientheaders_test.go",
+        "provider/foundryprovider/embedding.go",
+        "provider/foundryprovider/embedding_test.go",
+        "provider/foundryprovider/helpers_test.go",
+        "provider/foundryprovider/hostedsession.go",
+        "provider/foundryprovider/hostedsession_test.go",
+        "provider/foundryprovider/memory.go",
+        "provider/foundryprovider/memory_internal_test.go",
+        "provider/foundryprovider/memory_test.go",
+        "provider/foundryprovider/servedmodel.go",
+        "provider/foundryprovider/servedmodel_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.geminiprovider",
+      "go_sources": [
+        "provider/geminiprovider/agent.go",
+        "provider/geminiprovider/agent_test.go",
+        "provider/geminiprovider/doc.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.openaiprovider",
+      "go_sources": [
+        "provider/openaiprovider/chat.go",
+        "provider/openaiprovider/chat_test.go",
+        "provider/openaiprovider/doc.go",
+        "provider/openaiprovider/embedding.go",
+        "provider/openaiprovider/embedding_test.go",
+        "provider/openaiprovider/responses.go",
+        "provider/openaiprovider/responses_test.go",
+        "provider/openaiprovider/strict_schema.go",
+        "provider/openaiprovider/strict_schema_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.provider.otelprovider",
+      "go_sources": [
+        "provider/otelprovider/doc.go",
+        "provider/otelprovider/embedding.go",
+        "provider/otelprovider/embedding_test.go",
+        "provider/otelprovider/model.go",
+        "provider/otelprovider/otel.go",
+        "provider/otelprovider/otel_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P8",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool",
+      "go_sources": [
+        "tool/doc.go",
+        "tool/tool.go",
+        "tool/tool_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool.agenttool",
+      "go_sources": [
+        "tool/agenttool/agenttool.go",
+        "tool/agenttool/agenttool_test.go",
+        "tool/agenttool/doc.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool.functool",
+      "go_sources": [
+        "tool/functool/doc.go",
+        "tool/functool/func.go",
+        "tool/functool/func_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool.hostedtool",
+      "go_sources": [
+        "tool/hostedtool/hostedtool.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool.mcptool",
+      "go_sources": [
+        "tool/mcptool/mcp.go",
+        "tool/mcptool/mcp_test.go",
+        "tool/mcptool/native_content_test.go",
+        "tool/mcptool/pagination_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P9",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.tool.shelltool",
+      "go_sources": [
+        "tool/shelltool/environment.go",
+        "tool/shelltool/localshell.go",
+        "tool/shelltool/localshell_internal_test.go",
+        "tool/shelltool/session.go",
+        "tool/shelltool/session_other.go",
+        "tool/shelltool/session_unix.go",
+        "tool/shelltool/session_windows.go",
+        "tool/shelltool/shelltool.go",
+        "tool/shelltool/shelltool_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P7",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.vectordata",
+      "go_sources": [
+        "vectordata/collection.go",
+        "vectordata/definition.go",
+        "vectordata/filter.go",
+        "vectordata/helpers.go",
+        "vectordata/helpers_test.go",
+        "vectordata/options.go",
+        "vectordata/options_test.go",
+        "vectordata/store.go",
+        "vectordata/store_go127.go",
+        "vectordata/store_go127_test.go",
+        "vectordata/store_test.go",
+        "vectordata/vectordata.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.vectordata.inmemory",
+      "go_sources": [
+        "vectordata/inmemory/collection.go",
+        "vectordata/inmemory/collection_test.go",
+        "vectordata/inmemory/embedding_test.go",
+        "vectordata/inmemory/record.go",
+        "vectordata/inmemory/search.go",
+        "vectordata/inmemory/search_test.go",
+        "vectordata/inmemory/snapshot.go",
+        "vectordata/inmemory/snapshot_test.go",
+        "vectordata/inmemory/store.go",
+        "vectordata/inmemory/vector.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.vectordata.internal.recordvalue",
+      "go_sources": [
+        "vectordata/internal/recordvalue/value.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.vectordata.providerservices",
+      "go_sources": [
+        "vectordata/providerservices/accessor.go",
+        "vectordata/providerservices/builder.go",
+        "vectordata/providerservices/builder_test.go",
+        "vectordata/providerservices/embedding.go",
+        "vectordata/providerservices/embedding_test.go",
+        "vectordata/providerservices/filter.go",
+        "vectordata/providerservices/filter_test.go",
+        "vectordata/providerservices/model.go",
+        "vectordata/providerservices/sort.go",
+        "vectordata/providerservices/sort_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P6",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow",
+      "go_sources": [
+        "workflow/binding.go",
+        "workflow/binding_test.go",
+        "workflow/builder.go",
+        "workflow/builder_test.go",
+        "workflow/doc.go",
+        "workflow/edge.go",
+        "workflow/edge_test.go",
+        "workflow/event.go",
+        "workflow/event_test.go",
+        "workflow/examples_test.go",
+        "workflow/executor.go",
+        "workflow/executor_test.go",
+        "workflow/info.go",
+        "workflow/info_test.go",
+        "workflow/json_test.go",
+        "workflow/outputtag.go",
+        "workflow/portable.go",
+        "workflow/portable_test.go",
+        "workflow/protocol.go",
+        "workflow/protocol_test.go",
+        "workflow/requestport.go",
+        "workflow/route.go",
+        "workflow/route_test.go",
+        "workflow/telemetry.go",
+        "workflow/typeid.go",
+        "workflow/typeid_reflect2_gc.go",
+        "workflow/typeid_reflect2_other.go",
+        "workflow/typeid_test.go",
+        "workflow/workflow.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.agentworkflow",
+      "go_sources": [
+        "workflow/agentworkflow/builders.go",
+        "workflow/agentworkflow/builders_test.go",
+        "workflow/agentworkflow/concurrent.go",
+        "workflow/agentworkflow/concurrent_test.go",
+        "workflow/agentworkflow/groupchat.go",
+        "workflow/agentworkflow/groupchat_test.go",
+        "workflow/agentworkflow/hosting.go",
+        "workflow/agentworkflow/hosting_test.go",
+        "workflow/agentworkflow/inprocess_execution_test.go",
+        "workflow/agentworkflow/message_merger.go",
+        "workflow/agentworkflow/message_merger_test.go",
+        "workflow/agentworkflow/sequential.go",
+        "workflow/agentworkflow/sequential_test.go",
+        "workflow/agentworkflow/session.go",
+        "workflow/agentworkflow/workflow.go",
+        "workflow/agentworkflow/workflow_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.checkpoint",
+      "go_sources": [
+        "workflow/checkpoint/doc.go",
+        "workflow/checkpoint/jsonstore.go",
+        "workflow/checkpoint/jsonstore_test.go",
+        "workflow/checkpoint/manager.go",
+        "workflow/checkpoint/manager_test.go",
+        "workflow/checkpoint/store.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.inproc",
+      "go_sources": [
+        "workflow/inproc/binding_test.go",
+        "workflow/inproc/checkpoint_test.go",
+        "workflow/inproc/concurrent_test.go",
+        "workflow/inproc/context.go",
+        "workflow/inproc/doc.go",
+        "workflow/inproc/environment.go",
+        "workflow/inproc/environment_test.go",
+        "workflow/inproc/events_test.go",
+        "workflow/inproc/external_request_test.go",
+        "workflow/inproc/observability_test.go",
+        "workflow/inproc/outputfilter.go",
+        "workflow/inproc/routing_test.go",
+        "workflow/inproc/run.go",
+        "workflow/inproc/runner.go",
+        "workflow/inproc/runner_test.go",
+        "workflow/inproc/state_test.go",
+        "workflow/inproc/subworkflow.go",
+        "workflow/inproc/subworkflow_test.go",
+        "workflow/inproc/tracer.go",
+        "workflow/inproc/tracer_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.internal.checkpoint",
+      "go_sources": [
+        "workflow/internal/checkpoint/checkpoint.go",
+        "workflow/internal/checkpoint/checkpoint_json.go",
+        "workflow/internal/checkpoint/info.go",
+        "workflow/internal/checkpoint/info_test.go",
+        "workflow/internal/checkpoint/json_test.go",
+        "workflow/internal/checkpoint/sessioncache.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.internal.execution",
+      "go_sources": [
+        "workflow/internal/execution/edgerunner.go",
+        "workflow/internal/execution/edgerunner_observability_test.go",
+        "workflow/internal/execution/edgerunner_test.go",
+        "workflow/internal/execution/eventstream.go",
+        "workflow/internal/execution/eventstream_test.go",
+        "workflow/internal/execution/execution.go",
+        "workflow/internal/execution/inputwaiter_test.go",
+        "workflow/internal/execution/protocol.go",
+        "workflow/internal/execution/protocol_test.go",
+        "workflow/internal/execution/run.go",
+        "workflow/internal/execution/state.go",
+        "workflow/internal/execution/state_test.go",
+        "workflow/internal/execution/status.go",
+        "workflow/internal/execution/step.go",
+        "workflow/internal/execution/step_test.go",
+        "workflow/internal/execution/updatekey_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.internal.featureusage",
+      "go_sources": [
+        "workflow/internal/featureusage/featureusage.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.internal.observability",
+      "go_sources": [
+        "workflow/internal/observability/observability.go",
+        "workflow/internal/observability/observability_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.internal.workflowtest",
+      "go_sources": [
+        "workflow/internal/workflowtest/recording_tracer.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.observability",
+      "go_sources": [
+        "workflow/observability/doc.go",
+        "workflow/observability/observability.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "inventory.workflow.observability.opentelemetry",
+      "go_sources": [
+        "workflow/observability/opentelemetry/doc.go",
+        "workflow/observability/opentelemetry/otel.go",
+        "workflow/observability/opentelemetry/otel_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P4",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [
+        "docs/migration/go-inventory.json"
+      ],
+      "notes": "Package inventory placeholder, not a behavior assessment. Review exported declarations, all test assertions and platform variants before splitting into verified behavior records. Partial implementations are represented by separate behavior entries."
+    },
+    {
+      "id": "example.examples.01-get-started.01-hello-agent",
+      "go_sources": [
+        "examples/01-get-started/01_hello_agent/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.01-get-started.02-add-tools",
+      "go_sources": [
+        "examples/01-get-started/02_add_tools/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.01-get-started.03-multi-turn",
+      "go_sources": [
+        "examples/01-get-started/03_multi_turn/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.01-get-started.04-memory",
+      "go_sources": [
+        "examples/01-get-started/04_memory/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.01-get-started.05-first-workflow",
+      "go_sources": [
+        "examples/01-get-started/05_first_workflow/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.a2a.as-function-tools",
+      "go_sources": [
+        "examples/02-agents/a2a/as_function_tools/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.a2a.polling-for-task-completion",
+      "go_sources": [
+        "examples/02-agents/a2a/polling_for_task_completion/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.a2a.protocol-selection",
+      "go_sources": [
+        "examples/02-agents/a2a/protocol_selection/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.a2a.stream-reconnection",
+      "go_sources": [
+        "examples/02-agents/a2a/stream_reconnection/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.message-injection",
+      "go_sources": [
+        "examples/02-agents/agents/message-injection/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step01-running",
+      "go_sources": [
+        "examples/02-agents/agents/step01_running/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step02-multiturn-conversation",
+      "go_sources": [
+        "examples/02-agents/agents/step02_multiturn_conversation/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step03-using-function-tools",
+      "go_sources": [
+        "examples/02-agents/agents/step03_using_function_tools/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step04-using-function-tools-with-approvals",
+      "go_sources": [
+        "examples/02-agents/agents/step04_using_function_tools_with_approvals/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step05-structured-output",
+      "go_sources": [
+        "examples/02-agents/agents/step05_structured_output/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step06-persisted-conversation",
+      "go_sources": [
+        "examples/02-agents/agents/step06_persisted_conversation/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step07-3rdparty-session-storage",
+      "go_sources": [
+        "examples/02-agents/agents/step07_3rdparty_session_storage/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step08-observability",
+      "go_sources": [
+        "examples/02-agents/agents/step08_observability/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step09-dependency-injection",
+      "go_sources": [
+        "examples/02-agents/agents/step09_dependency_injection/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step10-as-mcp-tool",
+      "go_sources": [
+        "examples/02-agents/agents/step10_as_mcp_tool/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step11-using-images",
+      "go_sources": [
+        "examples/02-agents/agents/step11_using_images/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step12-as-function-tool",
+      "go_sources": [
+        "examples/02-agents/agents/step12_as_function_tool/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step13-middleware",
+      "go_sources": [
+        "examples/02-agents/agents/step13_middleware/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step13-using-audio-and-files",
+      "go_sources": [
+        "examples/02-agents/agents/step13_using_audio_and_files/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step17-additional-ai-context",
+      "go_sources": [
+        "examples/02-agents/agents/step17_additional_ai_context/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step18-compaction-pipeline",
+      "go_sources": [
+        "examples/02-agents/agents/step18_compaction_pipeline/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step19-loop-reinvocation",
+      "go_sources": [
+        "examples/02-agents/agents/step19_loop_reinvocation/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step21-shell-with-environment",
+      "go_sources": [
+        "examples/02-agents/agents/step21_shell_with_environment/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step22-foundry-memory",
+      "go_sources": [
+        "examples/02-agents/agents/step22_foundry_memory/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step23-planning-with-todos",
+      "go_sources": [
+        "examples/02-agents/agents/step23_planning_with_todos/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agents.step24-filememory",
+      "go_sources": [
+        "examples/02-agents/agents/step24_filememory/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step01-getting-started.client",
+      "go_sources": [
+        "examples/02-agents/agui/step01_getting_started/client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step01-getting-started.server",
+      "go_sources": [
+        "examples/02-agents/agui/step01_getting_started/server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step02-backend-tools.client",
+      "go_sources": [
+        "examples/02-agents/agui/step02_backend_tools/client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step02-backend-tools.server",
+      "go_sources": [
+        "examples/02-agents/agui/step02_backend_tools/server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step03-frontend-tools.client",
+      "go_sources": [
+        "examples/02-agents/agui/step03_frontend_tools/client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step03-frontend-tools.server",
+      "go_sources": [
+        "examples/02-agents/agui/step03_frontend_tools/server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step04-human-in-loop.client",
+      "go_sources": [
+        "examples/02-agents/agui/step04_human_in_loop/client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step04-human-in-loop.server",
+      "go_sources": [
+        "examples/02-agents/agui/step04_human_in_loop/server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step05-state-management.client",
+      "go_sources": [
+        "examples/02-agents/agui/step05_state_management/client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.agui.step05-state-management.server",
+      "go_sources": [
+        "examples/02-agents/agui/step05_state_management/server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.harness.step01-loop",
+      "go_sources": [
+        "examples/02-agents/harness/step01_loop/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.harness.step03-agentmode",
+      "go_sources": [
+        "examples/02-agents/harness/step03_agentmode/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.harness.step04-composite-harness",
+      "go_sources": [
+        "examples/02-agents/harness/step04_composite_harness/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.mcp.agent-mcp-server",
+      "go_sources": [
+        "examples/02-agents/mcp/agent_mcp_server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.mcp.local-stdio-mcp",
+      "go_sources": [
+        "examples/02-agents/mcp/local_stdio_mcp/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.memory.step01-chat-history-memory",
+      "go_sources": [
+        "examples/02-agents/memory/step01_chat_history_memory/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.memory.step05-bounded-chat-history",
+      "go_sources": [
+        "examples/02-agents/memory/step05_bounded_chat_history/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.a2a",
+      "go_sources": [
+        "examples/02-agents/providers/a2a/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.anthrophic",
+      "go_sources": [
+        "examples/02-agents/providers/anthrophic/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.anthrophic.thinking",
+      "go_sources": [
+        "examples/02-agents/providers/anthrophic/thinking/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.ai-project",
+      "go_sources": [
+        "examples/02-agents/providers/azure/ai_project/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.ai-search",
+      "go_sources": [
+        "examples/02-agents/providers/azure/ai_search/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.cosmosdb",
+      "go_sources": [
+        "examples/02-agents/providers/azure/cosmosdb/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.foundry-model",
+      "go_sources": [
+        "examples/02-agents/providers/azure/foundry_model/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.openai-chat-completion",
+      "go_sources": [
+        "examples/02-agents/providers/azure/openai_chat_completion/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.openai-responses",
+      "go_sources": [
+        "examples/02-agents/providers/azure/openai_responses/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.azure.openai-responses-background",
+      "go_sources": [
+        "examples/02-agents/providers/azure/openai_responses_background/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step01-basic",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step01_basic/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step02-1-multiturn",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step02_1_multiturn/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step02-2-multiturn-with-server-conversations",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step02_2_multiturn_with_server_conversations/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step03-function-tools",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step03_function_tools/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step04-function-tools-with-approvals",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step04_function_tools_with_approvals/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step05-structured-output",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step05_structured_output/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step06-persisted-conversations",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step06_persisted_conversations/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step07-observability",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step07_observability/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step09-mcp-client-as-tools",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step09_mcp_client_as_tools/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step10-images",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step10_images/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step11-as-function-tool",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step11_as_function_tool/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step12-middleware",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step12_middleware/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step13-plugins",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step13_plugins/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step14-code-interpreter",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step14_code_interpreter/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step21-web-search",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step21_web_search/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.foundry.step23-local-mcp",
+      "go_sources": [
+        "examples/02-agents/providers/foundry/step23_local_mcp/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.gemini",
+      "go_sources": [
+        "examples/02-agents/providers/gemini/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.gemini.thinking",
+      "go_sources": [
+        "examples/02-agents/providers/gemini/thinking/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.github-copilot",
+      "go_sources": [
+        "examples/02-agents/providers/github-copilot/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.chat-completion",
+      "go_sources": [
+        "examples/02-agents/providers/openai/chat_completion/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.responses",
+      "go_sources": [
+        "examples/02-agents/providers/openai/responses/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step01-running",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step01_running/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step02-reasoning",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step02_reasoning/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step03-create-from-chat-client",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step03_create_from_chat_client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step04-create-from-openai-response-client",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step04_create_from_openai_response_client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step05-conversation",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step05_conversation/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.providers.openai.step06-code-interpreter-file-download",
+      "go_sources": [
+        "examples/02-agents/providers/openai/step06_code_interpreter_file_download/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.rag.step01-basic-text-rag",
+      "go_sources": [
+        "examples/02-agents/rag/step01_basic_text_rag/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.rag.step02-custom-vector-store-rag",
+      "go_sources": [
+        "examples/02-agents/rag/step02_custom_vector_store_rag/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.rag.step03-custom-rag-data-source",
+      "go_sources": [
+        "examples/02-agents/rag/step03_custom_rag_data_source/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.rag.step04-foundry-service-rag",
+      "go_sources": [
+        "examples/02-agents/rag/step04_foundry_service_rag/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.rag.step05-neo4j-graph-rag",
+      "go_sources": [
+        "examples/02-agents/rag/step05_neo4j_graph_rag/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.skills.step01-file-based-skills",
+      "go_sources": [
+        "examples/02-agents/skills/step01_file_based_skills/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.skills.step02-code-defined-skills",
+      "go_sources": [
+        "examples/02-agents/skills/step02_code_defined_skills/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.skills.step03-mixed-skills",
+      "go_sources": [
+        "examples/02-agents/skills/step03_mixed_skills/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.02-agents.skills.step04-skills-auto-approval",
+      "go_sources": [
+        "examples/02-agents/skills/step04_skills_auto_approval/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.01-streaming",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/01_streaming/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.02-agents-in-workflows",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/02_agents_in_workflows/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.03-agent-workflow-patterns",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/03_agent_workflow_patterns/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.04-multi-model-service",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/04_multi_model_service/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.05-subworkflow",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/05_subworkflow/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.06-mixed-workflow-agents-and-executors",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/06_mixed_workflow_agents_and_executors/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.07-writer-critic-workflow",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/07_writer_critic_workflow/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.01-start-here.08-sequential-chain-only-responses",
+      "go_sources": [
+        "examples/03-workflows/01-start-here/08_sequential_chain_only_responses/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.agents.custom-agent-executors",
+      "go_sources": [
+        "examples/03-workflows/agents/custom_agent_executors/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.agents.group-chat-tool-approval",
+      "go_sources": [
+        "examples/03-workflows/agents/group_chat_tool_approval/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.agents.workflow-as-an-agent",
+      "go_sources": [
+        "examples/03-workflows/agents/workflow_as_an_agent/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.agents.workflow-as-an-agent-human-in-the-loop",
+      "go_sources": [
+        "examples/03-workflows/agents/workflow_as_an_agent_human_in_the_loop/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.cancellation",
+      "go_sources": [
+        "examples/03-workflows/cancellation/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.checkpoint.checkpoint-and-rehydrate",
+      "go_sources": [
+        "examples/03-workflows/checkpoint/checkpoint_and_rehydrate/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.checkpoint.checkpoint-and-resume",
+      "go_sources": [
+        "examples/03-workflows/checkpoint/checkpoint_and_resume/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.checkpoint.checkpoint-with-human-in-the-loop",
+      "go_sources": [
+        "examples/03-workflows/checkpoint/checkpoint_with_human_in_the_loop/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.checkpoint.filesystem-checkpoint",
+      "go_sources": [
+        "examples/03-workflows/checkpoint/filesystem_checkpoint/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.concurrent.concurrent",
+      "go_sources": [
+        "examples/03-workflows/concurrent/concurrent/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.concurrent.concurrent-custom-aggregator",
+      "go_sources": [
+        "examples/03-workflows/concurrent/concurrent_custom_aggregator/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.concurrent.map-reduce",
+      "go_sources": [
+        "examples/03-workflows/concurrent/map_reduce/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.conditional-edges.01-edge-condition",
+      "go_sources": [
+        "examples/03-workflows/conditional-edges/01_edge_condition/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.conditional-edges.02-switch-case",
+      "go_sources": [
+        "examples/03-workflows/conditional-edges/02_switch_case/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.conditional-edges.03-multi-selection",
+      "go_sources": [
+        "examples/03-workflows/conditional-edges/03_multi_selection/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.conditional-edges.04-intermediate-outputs",
+      "go_sources": [
+        "examples/03-workflows/conditional-edges/04_intermediate_outputs/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.human-in-the-loop.human-in-the-loop-basic",
+      "go_sources": [
+        "examples/03-workflows/human-in-the-loop/human_in_the_loop_basic/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.human-in-the-loop.imperative-request",
+      "go_sources": [
+        "examples/03-workflows/human-in-the-loop/imperative_request/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.loop",
+      "go_sources": [
+        "examples/03-workflows/loop/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.message-workflow",
+      "go_sources": [
+        "examples/03-workflows/message-workflow/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.observability.executor-io",
+      "go_sources": [
+        "examples/03-workflows/observability/executor_io/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.observability.workflow-as-an-agent",
+      "go_sources": [
+        "examples/03-workflows/observability/workflow_as_an_agent/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.shared-states",
+      "go_sources": [
+        "examples/03-workflows/shared-states/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.subworkflows.nested-order-processing",
+      "go_sources": [
+        "examples/03-workflows/subworkflows/nested_order_processing/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.03-workflows.subworkflows.request-interception",
+      "go_sources": [
+        "examples/03-workflows/subworkflows/request_interception/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.05-end-to-end.a2a-client-server.a2a-client",
+      "go_sources": [
+        "examples/05-end-to-end/a2a_client_server/a2a_client/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.05-end-to-end.a2a-client-server.a2a-server",
+      "go_sources": [
+        "examples/05-end-to-end/a2a_client_server/a2a_server/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "example.examples.demos.chat-cli",
+      "go_sources": [
+        "examples/demos/chat_cli/main.go"
+      ],
+      "go_tests": [],
+      "rust_target": "",
+      "rust_sources": [],
+      "rust_tests": [],
+      "phase": "P10",
+      "status": "not_started",
+      "compatibility": "inventory",
+      "evidence": [],
+      "notes": "Example must be ported or receive an explicit reviewed scope disposition; directory presence does not establish provider support."
+    },
+    {
+      "id": "message.content-preservation",
+      "go_sources": [
+        "message/content.go",
+        "message/content_test.go"
+      ],
+      "go_tests": [
+        "TestContentEncoding_UnmarshalUnknownTypeUsesRawContent",
+        "TestContentEncoding_PreservesAdditionalProperties"
+      ],
+      "rust_target": "crates/agent-core/src/content.rs",
+      "rust_sources": [
+        "crates/agent-core/src/content.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-core/tests/contracts.rs::unknown_content_and_annotation_roundtrip"
+      ],
+      "phase": "P1",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "id": "message.schema-validation",
+      "go_sources": [
+        "tool/functool/func.go",
+        "tool/functool/func_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "crates/agent-core/src/tool.rs",
+      "rust_sources": [
+        "crates/agent-core/src/tool.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-core/tests/contracts.rs::schema_generation_and_validation_reject_bad_arguments"
+      ],
+      "phase": "P1",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "id": "message.filters",
+      "go_sources": [
+        "message/messagefilter/filter.go",
+        "message/messagefilter/filter_test.go"
+      ],
+      "go_tests": [
+        "TestOr_ExternalOnlyOrSources",
+        "TestBuiltInFilters_DoNotAddMessages"
+      ],
+      "rust_target": "crates/agent-core/src/filter.rs",
+      "rust_sources": [
+        "crates/agent-core/src/filter.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-core/tests/contracts.rs::filters_preserve_input_positions_and_union_order"
+      ],
+      "phase": "P1",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "id": "response.folding-fixtures",
+      "go_sources": [
+        "agent/response.go",
+        "agent/response_test.go"
+      ],
+      "go_tests": [
+        "TestResponse_Update_SameMessage",
+        "TestResponse_Update_DifferentMessageID",
+        "TestResponse_Update_ContinuationToken",
+        "TestResponse_Update_AdditionalProperties",
+        "TestResponse_Update_CreatedAt_FirstValidWins"
+      ],
+      "rust_target": "crates/agent-core/src/response.rs",
+      "rust_sources": [
+        "crates/agent-core/src/response.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-core/tests/contracts.rs::response_reference_fixtures"
+      ],
+      "phase": "P1",
+      "status": "verified",
+      "compatibility": "behavioral",
+      "evidence": [
+        "docs/migration/status.md",
+        "tests/conformance/response-cases.json",
+        "tools/go-oracle/main.go"
+      ],
+      "notes": "Verified only for the eight named shared response projections: same/changed/nonconsecutive message IDs, role/author boundaries, continuation clearing, conversation retention/clearing, first valid timestamp, usage sums and empty stream. Both Go oracle and Rust pass. Full response/content coalescing and raw representations remain outside this bounded claim."
+    },
+    {
+      "id": "runtime.cancellation-spike",
+      "go_sources": [
+        "agent/agent.go",
+        "agent/agent_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "crates/agent-runtime/src/lib.rs",
+      "rust_sources": [
+        "crates/agent-runtime/src/lib.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-test-support/tests/lifecycle.rs::cancellation_wakes_a_pending_consumer"
+      ],
+      "phase": "P0",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "id": "runtime.middleware-spike",
+      "go_sources": [
+        "agent/middleware.go",
+        "agent/middleware_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "crates/agent-runtime/src/lib.rs",
+      "rust_sources": [
+        "crates/agent-runtime/src/lib.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-test-support/tests/lifecycle.rs::middleware_first_registered_is_outermost"
+      ],
+      "phase": "P0",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "id": "runtime.state-envelope-spike",
+      "go_sources": [
+        "workflow/portable.go",
+        "workflow/portable_test.go"
+      ],
+      "go_tests": [],
+      "rust_target": "crates/agent-runtime/src/state.rs",
+      "rust_sources": [
+        "crates/agent-runtime/src/state.rs"
+      ],
+      "rust_tests": [
+        "crates/agent-test-support/tests/lifecycle.rs::fresh_process_state_restore"
+      ],
+      "phase": "P0",
+      "status": "verified",
+      "compatibility": "adapted",
+      "evidence": [
+        "docs/migration/status.md"
+      ],
+      "notes": "Verified bounded foundation contract using the referenced Rust tests. Differences and later-phase package obligations are recorded in compatibility.md; this is not whole-package parity."
+    },
+    {
+      "rust_tests": [
+        "crates/agent-core/tests/completion.rs::content_reference_fixtures",
+        "crates/agent-core/tests/completion.rs::malformed_native_payloads_and_noncall_approvals_rejected"
+      ],
+      "notes": "Thirteen shared Go/Rust cases cover ordered text/reasoning/data merges, image replacement, web query accumulation, recursive code payloads, MCP and approval codecs. Malformed known payloads fail. Nil vectors are intentionally stricter.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "message/content.go",
+        "message/content_test.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "tests/conformance/content-cases.json",
+        "tools/go-oracle/main.go"
+      ],
+      "phase": "P1",
+      "rust_target": "crates/agent-core/src/coalesce.rs",
+      "rust_sources": [
+        "crates/agent-core/src/coalesce.rs"
+      ],
+      "id": "message.native-coalescing",
+      "status": "verified",
+      "go_tests": [
+        "TestContentEncoding_Roundtrip",
+        "TestCodeInterpreterContentEncoding_Roundtrip",
+        "TestToolApprovalContentEncoding_RoundtripsStableToolCalls"
+      ]
+    },
+    {
+      "rust_tests": [
+        "crates/agent-core/tests/completion.rs::response_projection_preserves_property_scopes_and_raw_objects",
+        "crates/agent-core/tests/completion.rs::response_projection_empty_and_metadata_only_edges"
+      ],
+      "notes": "Preserves scope, continuation, raw object identity and timestamp policy. Raw objects never serialize. Allocated empty Go property maps normalize to Rust empty maps and emit no extra update.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "agent/response.go",
+        "agent/response_test.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/migration/compatibility.md"
+      ],
+      "phase": "P1",
+      "rust_target": "crates/agent-core/src/response.rs",
+      "rust_sources": [
+        "crates/agent-core/src/response.rs"
+      ],
+      "id": "response.projection-and-raw",
+      "status": "verified",
+      "go_tests": [
+        "TestResponse_ToUpdates_PreservesPropertyScopes",
+        "TestResponse_ToUpdates_RoundTripPreservesRawRepresentationWithContinuationToken",
+        "TestResponse_ToUpdates_FallsBackToResponseCreatedAtWhenMessageCreatedAtIsZero"
+      ]
+    },
+    {
+      "rust_tests": [
+        "crates/agent-core/tests/completion.rs::options_layering_preserves_false_zero_empty_and_clear",
+        "crates/agent-core/tests/completion.rs::tool_modes_duplicates_and_modalities_are_checked"
+      ],
+      "notes": "Left-to-right patches retain omitted fields and support explicit false, zero, empty and clearing. Auto/none/required/named modes validate tool registration. Conservative capabilities reject unsupported modalities and duplicate tools before dispatch.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "agent/options.go",
+        "agent/options_test.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/migration/compatibility.md"
+      ],
+      "phase": "P1",
+      "rust_target": "crates/agent-core/src/tool.rs",
+      "rust_sources": [
+        "crates/agent-core/src/tool.rs"
+      ],
+      "id": "options.layering-and-tool-modes",
+      "status": "verified",
+      "go_tests": []
+    },
+    {
+      "rust_tests": [
+        "crates/agent-core/tests/completion.rs::identifiers_validate_on_construction_and_deserialization"
+      ],
+      "notes": "Rust domain IDs reject blank/control strings on construction and decoding. Wire message IDs remain strings to retain empty-ID folding semantics; this is an intentional API adaptation.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "agent/agent.go",
+        "message/message.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/migration/public-api-review.md"
+      ],
+      "phase": "P1",
+      "rust_target": "crates/agent-core/src/id.rs",
+      "rust_sources": [
+        "crates/agent-core/src/id.rs"
+      ],
+      "id": "identifiers.validated-domains",
+      "status": "verified",
+      "go_tests": []
+    },
+    {
+      "rust_tests": [
+        "crates/agent-core/tests/completion.rs::strict_schema_transforms_recursively_without_mutating_input",
+        "crates/agent-core/tests/completion.rs::strict_schema_rejects_unsupported_shapes_and_preserves_required_order"
+      ],
+      "notes": "Baseline closed-object/required/default/keyword transformation on cloned JSON. Rust adds a depth limit and no transform cache. Go TestStrict selection passed; no live-provider dialect claim.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "provider/openaiprovider/strict_schema.go",
+        "provider/openaiprovider/strict_schema_test.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/migration/compatibility.md"
+      ],
+      "phase": "P1",
+      "rust_target": "crates/agent-core/src/strict_schema.rs",
+      "rust_sources": [
+        "crates/agent-core/src/strict_schema.rs"
+      ],
+      "id": "schema.strict-baseline-transform",
+      "status": "verified",
+      "go_tests": [
+        "TestStrictSchemaToMapTransformsCloneRecursively",
+        "TestStrictSchemaToMapRejectsBooleanSchemas",
+        "TestStrictSchemaToMapRejectsUndeclaredRequiredProperty"
+      ]
+    },
+    {
+      "rust_tests": [
+        "crates/agent-test-support/tests/lifecycle.rs::registry_rejects_wrong_types_versions_and_duplicate_registration",
+        "crates/agent-test-support/tests/lifecycle.rs::queued_checkpoint_spike_restores_in_fresh_process"
+      ],
+      "notes": "Explicit stable schema/version registration restores queued messages and pending requests in a fresh process; repeated restore is independent. Rejects wrong schema/type/corrupt payload. Workflow execution and graph compatibility remain P5.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "workflow/portable.go",
+        "workflow/portable_test.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/adr/005-state-schema.md"
+      ],
+      "phase": "P0",
+      "rust_target": "crates/agent-runtime/src/state.rs",
+      "rust_sources": [
+        "crates/agent-runtime/src/state.rs"
+      ],
+      "id": "runtime.registered-queued-state-spike",
+      "status": "verified",
+      "go_tests": []
+    },
+    {
+      "rust_tests": [
+        "crates/agent-test-support/tests/lifecycle.rs::task_shutdown_joins_cleanup_without_cancelling_parent",
+        "crates/agent-test-support/tests/lifecycle.rs::task_timeout_aborts_and_reaps_uncooperative_work",
+        "crates/agent-test-support/tests/lifecycle.rs::abandoned_shutdown_aborts_owned_work"
+      ],
+      "notes": "Owned task group cooperatively cancels, joins before deadline, aborts and reaps timeout work; dropping shutdown aborts owned handles without cancelling parent. Adapter integration remains later phase.",
+      "compatibility": "adapted",
+      "go_sources": [
+        "agent/agent.go"
+      ],
+      "evidence": [
+        "docs/migration/status.md",
+        "docs/adr/010-cancellation.md"
+      ],
+      "phase": "P0",
+      "rust_target": "crates/agent-runtime/src/tasks.rs",
+      "rust_sources": [
+        "crates/agent-runtime/src/tasks.rs"
+      ],
+      "id": "runtime.owned-task-shutdown-spike",
+      "status": "verified",
+      "go_tests": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[package]
+name = "agent-framework"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Rust Agent Framework facade (P0/P1 foundation)"
+
+[features]
+default = ["runtime"]
+runtime = ["dep:agent-runtime"]
+
+[dependencies]
+agent-core.workspace = true
+agent-runtime = { workspace = true, optional = true }
+
+[dev-dependencies]
+agent-test-support.workspace = true
+tokio.workspace = true
+
+[[example]]
+name = "hello_scripted"
+required-features = ["runtime"]
+
+[lints]
+workspace = true

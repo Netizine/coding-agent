@@ -1,0 +1,33 @@
+name: Rust foundation
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned toolchain
+        run: rustup toolchain install 1.99.0 --profile minimal --component rustfmt --component clippy
+      - name: Fetch locked dependencies
+        run: cargo fetch --locked
+      - name: Formatting
+        run: cargo fmt --all -- --check
+      - name: Lints
+        run: cargo clippy --workspace --all-targets --locked --offline -- -D warnings
+      - name: Unit, conformance and lifecycle tests
+        run: cargo test --workspace --locked --offline
+      - name: Minimal facade
+        run: cargo check -p agent-framework --no-default-features --locked --offline
+      - name: Migration evidence
+        run: cargo run -p xtask --locked --offline -- check
+      - name: Example
+        run: cargo run -p agent-framework --example hello_scripted --locked --offline
+      - name: Documentation
+        run: cargo doc --workspace --no-deps --locked --offline
+        env:
+          RUSTDOCFLAGS: -D warnings

@@ -1,0 +1,7 @@
+/target/
+/temp/
+/reference/*.zip
+.env
+.env.*
+!.env.example
+*.profraw
