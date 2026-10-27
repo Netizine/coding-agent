@@ -1,6 +1,6 @@
 # P0/P1 implementation status
 
-Recorded 27 October 2026. **P0 is complete against the roadmap's foundation exit criteria. P1 implementation and local validation are complete; the remote platform matrix is pending the first push.** This does not certify whole-package Go parity or implement P2.
+Recorded 27 October 2026. **P0 and P1 are complete against the roadmap's foundation exit criteria.** Local validation and the Windows/Linux/macOS CI matrix passed. This does not certify whole-package Go parity or implement P2.
 
 ## Phase gates
 
@@ -15,7 +15,7 @@ Recorded 27 October 2026. **P0 is complete against the roadmap's foundation exit
 | P1 response contracts | Fold boundaries, scope, continuation, timestamps, usage, content-specific coalescing and response-to-updates projection tested. Eight response and thirteen content fixtures pass Go and Rust. |
 | P1 schema contracts | Typed schema generation, local validation and baseline strict-output transformation tested; external reference retrieval disabled. |
 | P1 public API | Minimal facade, example and doctest pass. Review and intentional differences recorded in public-api-review.md and compatibility.md. |
-| P1 platform checks | Local Windows validation passes. Windows/Linux/macOS workflow is configured; remote execution pending. |
+| P1 platform checks | Local Windows validation and all three remote jobs passed: Windows, Linux and macOS. |
 
 ## Validation
 
@@ -35,6 +35,7 @@ Host: Windows x86-64; Rust/Cargo 1.99.0 and Go 1.27.3. No cloud model calls or c
 | Go oracle: response/content cases | Passed: 8 response and 13 content cases |
 | Reference archive create/verify/restore and utility tests | Passed: recovered source matches original manifest; 2 utility tests |
 | Separate pinned Copilot mock-stream feasibility probe | Passed: native JSON-RPC ping and explicit transport shutdown; no Go process or CLI |
+| GitHub Actions platform matrix | [Run 40451596531](https://github.com/Netizine/coding-agent/actions/runs/40451596531) passed on all three platforms for implementation commit `d49ff2bf1a0b43b76d98c9cd5f9c22705e22d281` |
 
 Cargo offline mode prevents dependency fetching, not all process networking. Dependencies were fetched during preparation. Rust foundation tests use scripted/in-memory transports; reference tests use fake transports and local files. CI tests do not require Go or the excluded snapshot. The immutable manifest's `tests_executed: false` describes the original planning snapshot; this document records subsequent execution.
 

@@ -2,7 +2,7 @@
 
 Prepared 27 October 2026. Status: proposed implementation roadmap.
 
-Implementation has started in the root workspace. See [current P0/P1 status](docs/migration/status.md) for completed work, validation evidence, and remaining phase gates. The baseline observations below describe the original planning snapshot.
+P0/P1 implementation is complete in the root workspace. See [current P0/P1 status](docs/migration/status.md) for validation evidence, compatibility decisions and the next phase. The baseline observations below describe the original planning snapshot.
 
 Build a native Rust SDK in this repository root, using `temp/agent-framework-go` as the behavioral reference. Preserve the reference copy throughout the migration. Deliver a small, usable agent SDK first, then expand to the Go implementation's workflows, persistence, providers, and integrations through explicit parity gates.
 

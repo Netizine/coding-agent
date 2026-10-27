@@ -35,7 +35,7 @@ cargo run -p xtask --locked -- baseline
 
 The last command requires the preserved local Go directory. Other Rust tests and checks do not need Go or the reference source. After dependencies are fetched, add `--offline` to Cargo commands to disable Cargo's network access. This is distinct from an OS-level network sandbox.
 
-CI is configured for Windows, Linux and macOS. Local validation results are recorded in [the implementation status](docs/migration/status.md); configuring CI is not evidence that remote jobs have run.
+P0/P1 validation passed on Windows, Linux and macOS in [GitHub Actions](https://github.com/Netizine/coding-agent/actions/runs/40451596531). Commands, test counts, scope and source-integrity evidence are recorded in [the implementation status](docs/migration/status.md).
 
 ## Migration records
 
